@@ -33,7 +33,7 @@ def send_all(msg):
 
 def send_all_json(obj):
     send_all( json.dumps(obj) )
-
+#https://github.com/abramhindle/WebSocketsExamples/blob/master/chat.py
 class Client:
     def __init__(self):
         self.queue = queue.Queue()
@@ -88,7 +88,7 @@ def set_listener( entity, data ):
 
 
 myWorld.add_set_listener( set_listener )
-        
+#https://github.com/abramhindle/WebSocketsExamples/blob/master/chat.py        
 @app.route('/')
 def hello():
     '''Return something coherent here.. perhaps redirect to /static/index.html '''
